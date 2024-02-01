@@ -1,0 +1,160 @@
+body {
+    background-color: #272b30;
+}
+
+
+
+header img {
+    height: 30vh;
+    object-fit: cover;
+}
+
+
+.navbar {
+    background-color: #3a497b !important;
+}
+
+
+
+
+.navbar .navbar-brand {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.navbar a {
+    color: white;
+    font-family: 'Comfortaa' !important;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+
+.selectedCategory {
+    font-size: 18px;
+    color: #09c !important;
+}
+
+.title h3 {
+    font-size: 14px;
+    font-family: 'Comfortaa';
+}
+
+.itemHolder {
+    position: relative;
+    color: white;
+    word-wrap: break-word;
+    cursor: pointer;
+    transition: all 0.4s;
+    filter: grayscale(60%);
+    border-radius: 10px;
+}
+
+.itemHolder:hover {
+    transform: scale(1.08);
+    filter: grayscale(0%);
+    overflow: hidden;
+}
+
+.itemHolder .smallDesc {
+    color: white;
+    opacity: 50%;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+
+.itemHolder .item {
+    padding: 10px;
+    border-radius: 8px;
+    border: 0.25px solid rgba(0, 0, 0, 0.175);
+}
+
+footer .badge {
+    background-color: #09c;
+}
+
+footer {
+    border: 0.25px solid rgba(0, 0, 0, 0.175) !important;
+    border-radius: 10px !important;
+    border-top: none !important;
+}
+
+.item img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+
+#details h3 {
+    color: white;
+    font-size: 30px;
+}
+
+
+.desc {
+    color: white;
+}
+
+
+
+
+.lds-hourglass {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-hourglass 1.2s infinite;
+}
+
+@keyframes lds-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+.gameDetails {
+    position: relative;
+}
+
+.gameDetails .icon {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+    color: #797171;
+    transition: all 0.25s;
+}
+
+.gameDetails .icon:hover {
+    color: white;
+}

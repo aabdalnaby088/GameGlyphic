@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVeiwer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="games" class="">
+        <header>
+            <img src="./images/wraper.png" class="w-100" alt="game photo">
+        </header>
+
+
+        <nav class="container position-sticky top-0  z-2">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-4 shadow p-2 my-3">
+                <div class="container-fluid  d-flex justify-content-between ">
+                    <a class="navbar-brand " href="#">
+                        <img src="./images/logo-sm.png" alt="Logo" width="50" height="40"
+                            class="d-inline-block align-text-center">
+                        GAME REVIEWS</a>
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ">
+                            <a class="nav-link selectedCategory" href="#" category='mmorpg'>mmorpg</a>
+                            <a class="nav-link" href="#" category='shooter'>shooter</a>
+                            <a class="nav-link" href="#" category='sailing'>sailing</a>
+                            <a class="nav-link" href="#" category='permadeath'>permadeath</a>
+                            <a class="nav-link" href="#" category='superhero'>superhero</a>
+                            <a class="nav-link" href="#" category='pixel'>pixel</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+
+
+        <div class="container">
+            <div class="row px-5" id="gamesViewer">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="details" class="d-none">
+        <div class="container my-5 " id="detailsScreen">
+
+        </div>
+    </div>
+
+    <div class="lds-hourglass position-absolute z-3 top-50 "></div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+
+</body>
+
+</html>

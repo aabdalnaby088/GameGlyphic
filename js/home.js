@@ -13,6 +13,7 @@ export class Home {
         this.loader = document.querySelector('.lds-hourglass');
         this.games = document.getElementById('games');
         this.gamedetails = document.getElementById('details');
+        this.searchBar = document.getElementById('searchBar');
     }
 
 
@@ -33,8 +34,10 @@ export class Home {
             const result = await response.json();
             this.loader.classList.add('d-none');
             this.games.classList.remove('d-none');
+            console.log(result); 
             this.ui.displayMovies(result);
             this.makeItClickable();
+            this.search(result) ; 
         } catch (error) {
             console.error(error);
         }
@@ -58,5 +61,15 @@ export class Home {
         document.getElementById("details").classList.remove("d-none");
     }
 
+
+search(data)
+{
+    let res = [] ; 
+this.searchBar.addEventListener('input' , () =>
+{
+res = data.filter( item => item.title.toLowerCase().includes(searchBar.value.toLowerCase())) ; 
+    this.ui.displayMovies(res);
+})
+}
 
 }
